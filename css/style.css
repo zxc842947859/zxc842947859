@@ -1,0 +1,511 @@
+/* 设置界面背景 */
+body {
+  background: url('../images/bg.jpg') no-repeat;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  min-height: 1000px;
+  min-width: 1000px;
+  max-width: 1920px;
+  background: url(../images/logo.png) no-repeat;
+  background-size: contain;
+  padding: 87px 20px 20px;
+  /* 图片边框 */
+  /* 1. 第一列 */
+  /* 第二列 */
+  /* 第三列 */
+}
+.container .panel {
+  position: relative;
+  min-height: 80px;
+  min-width: 200px;
+  border: 20px solid red;
+  border-width: 50px 38px 20px 126px;
+  border-image: url(../images/border.png) 50 38 20 126 stretch;
+}
+.container .panel .inner {
+  position: absolute;
+  top: -30px;
+  left: -106px;
+  bottom: 0px;
+  right: -18px;
+}
+.container .column1 {
+  flex: 3;
+  /* 1.1 数据概览*/
+  /* 1.2 故障信息 */
+  /* 1.3 占位分布 */
+}
+.container .column1 .overflow {
+  height: 109px;
+}
+.container .column1 .overflow .inner ul {
+  display: flex;
+}
+.container .column1 .overflow .inner ul li {
+  flex: 25%;
+  text-align: center;
+  height: 100%;
+}
+.container .column1 .overflow .inner ul li p {
+  font-size: 28px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.container .column1 .overflow .inner ul li span {
+  color: #4c9bfd;
+  font-size: 14px;
+}
+.container .column1 .stoppage {
+  margin: 20px 0px;
+  height: 474px;
+}
+.container .column1 .stoppage .tab {
+  height: 40px;
+  line-height: 18px;
+  font-size: 18px;
+}
+.container .column1 .stoppage .tab li:nth-child(1) {
+  padding-right: 26px;
+  border-right: 2px solid #00f2f1;
+  margin-left: 20px;
+}
+.container .column1 .stoppage .tab li:nth-child(2) {
+  margin-left: 27px;
+}
+.container .column1 .stoppage .tab a {
+  color: #1150c4;
+}
+.container .column1 .stoppage .tab .active {
+  color: white;
+}
+.container .column1 .stoppage .bug-device .head {
+  height: 38px;
+  margin-left: -20px;
+  margin-right: -20px;
+  line-height: 38px;
+  padding-left: 40px;
+  padding-right: 60px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.container .column1 .stoppage .bug-device .head span {
+  color: #68d8fe;
+  font-size: 14px;
+}
+.container .column1 .stoppage .bug-device .head span:nth-child(2) {
+  margin-left: 35px;
+}
+.container .column1 .stoppage .bug-device .content {
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+.container .column1 .stoppage .bug-device .content ul {
+  position: absolute;
+}
+.container .column1 .stoppage .bug-device .content ul li {
+  height: 36px;
+  line-height: 36px;
+  padding-left: 20px;
+  padding-right: 35px;
+}
+.container .column1 .stoppage .bug-device .content ul li span {
+  color: #5696e4;
+  text-align: left;
+  float: left;
+}
+.container .column1 .stoppage .bug-device .content ul li span:nth-child(1) {
+  float: left;
+  width: 15%;
+}
+.container .column1 .stoppage .bug-device .content ul li span:nth-child(2) {
+  float: left;
+  margin-left: 35px;
+  margin-right: 35px;
+  width: 51%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container .column1 .point {
+  height: 335px;
+}
+.container .column1 .point h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.container .column1 .point .pie {
+  width: 60%;
+  height: 238px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.container .column1 .point .data {
+  width: 40%;
+  height: 238px;
+  background: url(../images/rect.png) no-repeat;
+}
+.container .column1 .point .data .item1,
+.container .column1 .point .data .item2 {
+  padding-top: 40px;
+  height: 50%;
+  padding-left: 35px;
+}
+.container .column1 .point .data .item1 p,
+.container .column1 .point .data .item2 p {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 13px;
+}
+.container .column1 .point .data .item1 i,
+.container .column1 .point .data .item2 i,
+.container .column1 .point .data .item1 span,
+.container .column1 .point .data .item2 span {
+  font-size: 14px;
+  color: #4c9bfd;
+}
+.container .column1 .point .data .item2 {
+  padding-top: 20px;
+}
+.container .column2 {
+  flex: 4;
+  margin: 0px 20px;
+  /* 2.1 设备数据统计 */
+  /* 2.2 全国用户总量统计 */
+}
+.container .column2 .map {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 583px;
+}
+.container .column2 .map h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 50px;
+}
+.container .column2 .map h3 i {
+  color: #68d8fe;
+  margin-right: 4px;
+}
+.container .column2 .map .echarts {
+  height: 533px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.container .column2 .user-count {
+  height: 335px;
+}
+.container .column2 .user-count h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.container .column2 .user-count .bar-chart {
+  width: 72%;
+  height: 238px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.container .column2 .user-count .data {
+  width: 28%;
+  height: 238px;
+  background: url(../images/rect.png) no-repeat;
+}
+.container .column2 .user-count .data .item1,
+.container .column2 .user-count .data .item2 {
+  padding-top: 40px;
+  height: 50%;
+  padding-left: 35px;
+}
+.container .column2 .user-count .data .item1 p,
+.container .column2 .user-count .data .item2 p {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 13px;
+}
+.container .column2 .user-count .data .item1 i,
+.container .column2 .user-count .data .item2 i,
+.container .column2 .user-count .data .item1 span,
+.container .column2 .user-count .data .item2 span {
+  font-size: 14px;
+  color: #4c9bfd;
+}
+.container .column2 .user-count .data .item2 {
+  padding-top: 20px;
+}
+.container .column3 {
+  flex: 3;
+  /* 3.1 订单量 */
+  /* 3.2 销售额统计 */
+  /* 3.3 渠道 */
+  /* 3.4 全国热榜 */
+}
+.container .column3 .order {
+  height: 146px;
+  margin-bottom: 20px;
+}
+.container .column3 .order .date-tab {
+  margin-left: 15px;
+}
+.container .column3 .order .date-tab li {
+  float: left;
+  font-size: 14px;
+}
+.container .column3 .order .date-tab li a {
+  color: #1950c4;
+}
+.container .column3 .order .date-tab li .active {
+  color: white;
+  font-weight: bold;
+}
+.container .column3 .order .date-tab li span {
+  color: #00f2f1;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+.container .column3 .order .data {
+  height: 60px;
+}
+.container .column3 .order .data .item1,
+.container .column3 .order .data .item2 {
+  padding-top: 15px;
+  width: 50%;
+  padding-left: 15px;
+}
+.container .column3 .order .data .item1 p,
+.container .column3 .order .data .item2 p {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.container .column3 .order .data .item1 i,
+.container .column3 .order .data .item2 i,
+.container .column3 .order .data .item1 span,
+.container .column3 .order .data .item2 span {
+  font-size: 14px;
+  color: #4c9bfd;
+}
+.container .column3 .sale {
+  height: 242px;
+  margin-bottom: 20px;
+}
+.container .column3 .sale .head {
+  margin-top: 5px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+.container .column3 .sale .head h3,
+.container .column3 .sale .head i {
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  margin-left: 20px;
+}
+.container .column3 .sale .head i {
+  color: #00f2f1;
+}
+.container .column3 .sale .head span {
+  color: #0bace6;
+  font-size: 15px;
+  margin-left: 25px;
+}
+.container .column3 .sale .head .active {
+  color: white;
+  background-color: #4c9bfd;
+  padding: 3px 4px;
+  border-radius: 3px;
+}
+.container .column3 .sale .line-chart {
+  height: 160px;
+}
+.container .column3 .ditch-content {
+  margin-bottom: 20px;
+  /* 3.3 季度销售进度 */
+}
+.container .column3 .ditch-content h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.container .column3 .ditch-content .ditch {
+  height: 230px;
+  width: 48%;
+}
+.container .column3 .ditch-content .ditch .data {
+  height: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.container .column3 .ditch-content .ditch .data li {
+  width: 42%;
+  text-align: center;
+}
+.container .column3 .ditch-content .ditch .data li h3 {
+  margin-left: 0px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.container .column3 .ditch-content .ditch .data li h3 span {
+  font-size: 12px;
+  color: white;
+}
+.container .column3 .ditch-content .ditch .data li span {
+  color: #4c9bfd;
+}
+.container .column3 .ditch-content .quarter {
+  height: 230px;
+  width: 48%;
+}
+.container .column3 .ditch-content .quarter .echarts {
+  position: relative;
+  margin-top: -10px;
+  height: 87px;
+}
+.container .column3 .ditch-content .quarter .echarts .loop {
+  height: 100%;
+}
+.container .column3 .ditch-content .quarter .echarts .show {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-48%, 0%);
+  color: white;
+}
+.container .column3 .ditch-content .quarter .echarts .show b {
+  font-size: 16px;
+  margin-right: 2px;
+}
+.container .column3 .ditch-content .quarter .data {
+  height: 60px;
+}
+.container .column3 .ditch-content .quarter .data .item1,
+.container .column3 .ditch-content .quarter .data .item2 {
+  padding-top: 15px;
+  width: 50%;
+  padding-left: 15px;
+}
+.container .column3 .ditch-content .quarter .data .item1 p,
+.container .column3 .ditch-content .quarter .data .item2 p {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.container .column3 .ditch-content .quarter .data .item1 i,
+.container .column3 .ditch-content .quarter .data .item2 i,
+.container .column3 .ditch-content .quarter .data .item1 span,
+.container .column3 .ditch-content .quarter .data .item2 span {
+  font-size: 12px;
+  color: #4c9bfd;
+}
+.container .column3 .hot {
+  height: 280px;
+}
+.container .column3 .hot .head {
+  line-height: 18px;
+}
+.container .column3 .hot .head h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.container .column3 .hot .head .all-title {
+  margin-right: 40px;
+}
+.container .column3 .hot .head span {
+  color: #0bace6;
+  margin-right: 20px;
+}
+.container .column3 .hot .left-hot {
+  width: 27%;
+}
+.container .column3 .hot .left-hot ul {
+  margin-left: 20px;
+  height: 210px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.container .column3 .hot .left-hot ul li {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+}
+.container .column3 .hot .left-hot ul li i {
+  font-size: 32px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.container .column3 .hot .left-hot ul li span {
+  color: #4c9bfd;
+  font-size: 15px;
+  line-height: 32px;
+}
+.container .column3 .hot .right-hot {
+  height: 210px;
+  width: 65%;
+  margin-left: 25px;
+  padding-top: 5px;
+}
+.container .column3 .hot .right-hot .city-hot {
+  width: 50%;
+}
+.container .column3 .hot .right-hot .city-hot .active {
+  background-color: #02133b;
+  color: white;
+}
+.container .column3 .hot .right-hot .city-hot li {
+  height: 32px;
+  color: #295693;
+  font-size: 15px;
+  line-height: 32px;
+  padding-left: 10px;
+}
+.container .column3 .hot .right-hot .city-hot li span:nth-child(1) {
+  margin-right: 20px;
+}
+.container .column3 .hot .right-hot .city-hot li i.icon-up {
+  color: #c23734;
+  margin-left: 5px;
+}
+.container .column3 .hot .right-hot .city-hot li i.icon-down {
+  color: #36be90;
+  margin-left: 5px;
+}
+.container .column3 .hot .right-hot .goods-hot {
+  width: 50%;
+  padding-top: 2px;
+  background-color: #02133c;
+}
+.container .column3 .hot .right-hot .goods-hot li {
+  padding-left: 10px;
+  height: 30px;
+  color: #52ffff;
+  font-size: 14px;
+  line-height: 30px;
+}
+.container .column3 .hot .right-hot .goods-hot li span:nth-child(1) {
+  float: left;
+}
+.container .column3 .hot .right-hot .goods-hot li span:nth-child(2) {
+  float: right;
+}
+.container .column3 .hot .right-hot .goods-hot li i.icon-up {
+  color: #c23734;
+  margin-left: 5px;
+}
+.container .column3 .hot .right-hot .goods-hot li i.icon-down {
+  color: #36be90;
+  margin-left: 5px;
+}

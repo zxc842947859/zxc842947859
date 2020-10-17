@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可视化项目</title>
+    <!-- 链接favicon小图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 引入公共的样式 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 字体图标 -->
+    <link rel="stylesheet" href="fonts/icomoon.css">
+    <!-- 页面样式 -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/echarts.js"></script>
+    <script src="js/china.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- 1.第一列 -->
+        <div class="column1">
+            <!-- 1.1 数据概览 -->
+            <div class="overflow panel">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <p>2,190</p>
+                            <i class="icon-dot" style="color:#006cff;"></i><span>设备总数</span>
+                        </li>
+                        <li>
+                            <p>190</p>
+                            <i class="icon-dot" style="color: #6acca3;"></i><span>季度新增</span>
+                        </li>
+                        <li>
+                            <p>3,001</p>
+                            <i class="icon-dot" style="color: #6acca3;"></i><span>运营设备</span>
+                        </li>
+                        <li>
+                            <p>108</p>
+                            <i class="icon-dot" style="color: #ed3f35"></i><span>异常设备</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 1.2 故障设置监控 -->
+            <div class="stoppage panel">
+                <div class="inner">
+                    <ul class="tab">
+                        <li class="fl"><a href="javascript:;" class="active">故障设备监控</a></li>
+                        <li class="fl"><a href="javascript:;">异常设备监控</a></li>
+                    </ul>
+
+                    <div class="bug-device">
+                        <div class="head">
+                            <span class="fl">故障时间</span>
+                            <span class="fl">设备地址</span>
+                            <span class="fr">异常代码</span>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <span>20201001</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000001</span>
+                                </li>
+                                <li>
+                                    <span>20201002</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000002</span>
+                                </li>
+                                <li>
+                                    <span>20201003</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000003</span>
+                                </li>
+                                <li>
+                                    <span>20201004</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000004</span>
+                                </li>
+                                <li>
+                                    <span>20201005</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000005</span>
+                                </li>
+                                <li>
+                                    <span>20201006</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000006</span>
+                                </li>
+                                <li>
+                                    <span>20201007</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000007</span>
+                                </li>
+                                <li>
+                                    <span>20201008</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000008</span>
+                                </li>
+                                <li>
+                                    <span>20201009</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000009</span>
+                                </li>
+                                <li>
+                                    <span>202010010</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>100000010</span>
+                                </li>
+                                <li>
+                                    <span>202010011</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>100000011</span>
+                                </li>
+                                <li>
+                                    <span>202010012</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>100000012</span>
+                                </li>
+                                <li>
+                                    <span>202010013</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>100000013</span>
+                                </li>
+                                <li>
+                                    <span>202010014</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>100000014</span>
+                                </li>
+                                <li>
+                                    <span>202010015</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>100000015</span>
+                                </li>
+                                <li>
+                                    <span>20201001</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000001</span>
+                                </li>
+                                <li>
+                                    <span>20201002</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000002</span>
+                                </li>
+                                <li>
+                                    <span>20201003</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000003</span>
+                                </li>
+                                <li>
+                                    <span>20201004</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000004</span>
+                                </li>
+                                <li>
+                                    <span>20201005</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000005</span>
+                                </li>
+                                <li>
+                                    <span>20201006</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000006</span>
+                                </li>
+                                <li>
+                                    <span>20201007</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000007</span>
+                                </li>
+                                <li>
+                                    <span>20201008</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000008</span>
+                                </li>
+                                <li>
+                                    <span>20201009</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000009</span>
+                                </li>
+                                <li>
+                                    <span>202010010</span>
+                                    <span>深圳市宝安区石岩创维校区4楼408教室黑马程序员前端62期</span>
+                                    <span>100000010</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content" style="display: none;">
+                            <ul class="exception-device">
+                                <li>
+                                    <span>20201001</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000001</span>
+                                </li>
+                                <li>
+                                    <span>20201002</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000002</span>
+                                </li>
+                                <li>
+                                    <span>20201003</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000003</span>
+                                </li>
+                                <li>
+                                    <span>20201004</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000004</span>
+                                </li>
+                                <li>
+                                    <span>20201005</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000005</span>
+                                </li>
+                                <li>
+                                    <span>20201006</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000006</span>
+                                </li>
+                                <li>
+                                    <span>20201007</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000007</span>
+                                </li>
+                                <li>
+                                    <span>20201008</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000008</span>
+                                </li>
+                                <li>
+                                    <span>20201009</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000009</span>
+                                </li>
+                                <li>
+                                    <span>202010010</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>100000010</span>
+                                </li>
+                                <li>
+                                    <span>202010011</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>100000011</span>
+                                </li>
+                                <li>
+                                    <span>202010012</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>100000012</span>
+                                </li>
+                                <li>
+                                    <span>202010013</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>100000013</span>
+                                </li>
+                                <li>
+                                    <span>202010014</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>100000014</span>
+                                </li>
+                                <li>
+                                    <span>202010015</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>100000015</span>
+                                </li>
+                                <li>
+                                    <span>20201001</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000001</span>
+                                </li>
+                                <li>
+                                    <span>20201002</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000002</span>
+                                </li>
+                                <li>
+                                    <span>20201003</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000003</span>
+                                </li>
+                                <li>
+                                    <span>20201004</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000004</span>
+                                </li>
+                                <li>
+                                    <span>20201005</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000005</span>
+                                </li>
+                                <li>
+                                    <span>20201006</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000006</span>
+                                </li>
+                                <li>
+                                    <span>20201007</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000007</span>
+                                </li>
+                                <li>
+                                    <span>20201008</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000008</span>
+                                </li>
+                                <li>
+                                    <span>20201009</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>10000009</span>
+                                </li>
+                                <li>
+                                    <span>202010010</span>
+                                    <span>深圳市宝安区中粮校区4楼408教室黑马程序员前端62期</span>
+                                    <span>100000010</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 1.3 点位分布 -->
+            <div class="point panel">
+                <div class="inner">
+                    <h3>点位分布统计</h3>
+                    <div class="pie fl"></div>
+                    <div class="data fr">
+                        <div class="item1">
+                            <p>320,11</p>
+                            <i class="icon-dot" style="color: #ed3f35;"></i><span>点位总数</span>
+                        </div>
+                        <div class="item2">
+                            <p>418</p>
+                            <i class="icon-dot" style="color: #eacf19;"></i><span>本月新增</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2.第二列 -->
+        <div class="column2">
+            <!-- 2.1 设备数据统计 -->
+            <div class="map">
+                <h3><i class="icon-cube"></i>设备数据统计</h3>
+                <div class="echarts"></div>
+            </div>
+            <!-- 2.2 全国用户总量统计 -->
+            <div class="user-count panel">
+                <div class="inner">
+                    <h3>全国用户总量统计</h3>
+                    <div class="bar-chart fl"></div>
+                    <div class="data fr">
+                        <div class="item1">
+                            <p>120,899</p>
+                            <i class="icon-dot" style="color: #ed3f35;"></i><span>用户总数</span>
+                        </div>
+                        <div class="item2">
+                            <p>248</p>
+                            <i class="icon-dot" style="color: #eacf19;"></i><span>本月新增</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 3.第三列 -->
+        <div class="column3">
+            <!-- 3.1 订单量 -->
+            <div class="order panel">
+                <div class="inner">
+                    <ul class="date-tab clearfix">
+                        <li><a href="javascript:;">365天</a><span>|</span></li>
+                        <li><a href="javascript:;">90天</a><span>|</span></li>
+                        <li><a href="javascript:;" class="active">30天</a><span>|</span></li>
+                        <li><a href="javascript:;">24小时</a></li>
+                    </ul>
+
+                    <div class="data">
+                        <div class="item1 fl">
+                            <p>1,987</p>
+                            <i class="icon-dot" style="color: #ed3f35;"></i><span>订单量</span>
+                        </div>
+                        <div class="item2 fl">
+                            <p>3834</p>
+                            <i class="icon-dot" style="color: #eacf19;"></i><span>销售额(万元)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3.2 销售额统计 -->
+            <div class="sale panel">
+                <div class="inner">
+                    <div class="head">
+                        <h3>销售额统计</h3>
+                        <i>|</i>
+                        <span>年</span>
+                        <span>季</span>
+                        <span class="active">月</span>
+                        <span>周</span>
+                    </div>
+                    <div class="line-chart"></div>
+                </div>
+            </div>
+            <!-- 3.3 渠道分布 -->
+            <div class="ditch-content clearfix">
+                <div class="ditch panel fl">
+                    <div class="inner">
+                        <div class="head">
+                            <h3>渠道分布</h3>
+                        </div>
+                        <ul class="data">
+                            <li>
+                                <h3>39<span> %</span></h3>
+                                <span><i class="icon-plane"></i> 机场</span>
+                            </li>
+                            <li>
+                                <h3>28<span> %</span></h3>
+                                <span><i class="icon-bag"></i> 商场</span>
+                            </li>
+                            <li>
+                                <h3>20<span> %</span></h3>
+                                <span><i class="icon-train"></i> 地铁</span>
+                            </li>
+                            <li>
+                                <h3>13<span> %</span></h3>
+                                <span><i class="icon-bus"></i> 火车站</span>
+                            </li>  
+                        </ul>
+                    </div>
+                </div>
+                <div class="quarter panel fr">
+                    <div class="inner">
+                        <div class="head">
+                            <h3>一季度销售进度</h3>
+                        </div>
+                        <div class="echarts">
+                            <div class="loop"></div>
+                            <div class="show"><b>75</b><small>%</small></div>
+                        </div>
+                        <div class="data">
+                            <div class="item1 fl">
+                                <p>1,321</p>
+                                <i class="icon-dot" style="color: #6acca3;"></i><span>销售额</span>
+                            </div>
+                            <div class="item2 fl">
+                                <p>150%</p>
+                                <i class="icon-dot" style="color: #ed3f35;"></i><span>同比增长</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3.4 全国热榜 -->
+            <div class="hot panel">
+                <div class="inner">
+                    <div class="head clearfix">
+                        <h3 class="fl all-title">全国热榜</h3>
+                        <h3 class="fl">各省热销</h3>
+                        <span class="fr">// 近30日 //</span>
+                    </div>
+                    <div class="left-hot fl">
+                        <ul>
+                            <li><i class="icon-cup1" style="color: #d93f36;"></i><span>可爱多</span></li>
+                            <li><i class="icon-cup2" style="color: #68d8fe;"></i><span>娃哈哈</span></li>
+                            <li><i class="icon-cup3" style="color: #4c9bfd;"></i><span>喜之郞</span></li>
+                        </ul>
+                    </div>
+                    <div class="right-hot fl">
+                        <ul class="city-hot fl clearfix">
+                            <li class="active">
+                                <span>北京</span>
+                                <span>25,179<i class="icon-up"></i></span>
+                            </li>
+                            <li>
+                                <span>河北</span>
+                                <span>25,179<i class="icon-down"></i></span>
+                            </li>
+                            <li>
+                                <span>上海</span>
+                                <span>25,179<i class="icon-up"></i></span>
+                            </li>
+                            <li>
+                                <span>江苏</span>
+                                <span>25,179<i class="icon-down"></i></span>
+                            </li>
+                            <li>
+                                <span>山东</span>
+                                <span>25,179<i class="icon-up"></i></span>
+                            </li>
+                        </ul>
+                        <ul class="goods-hot fr clearfix">
+                            <li>
+                                <span>八喜</span>
+                                <span>25,179<i class="icon-up"></i></span>
+                            </li>
+                            <li>
+                                <span>娃哈哈</span>
+                                <span>25,179<i class="icon-up"></i></span>
+                            </li>
+                            <li>
+                                <span>好多鱼</span>
+                                <span>25,179<i class="icon-up"></i></span>
+                            </li>
+                            <li>
+                                <span>可爱多</span>
+                                <span>25,179<i class="icon-up"></i></span>
+                            </li>
+                            <li>
+                                <span>喜之郎</span>
+                                <span>25,179<i class="icon-up"></i></span>
+                            </li>
+                            <li>
+                                <span>好多鱼</span>
+                                <span>25,179<i class="icon-up"></i></span>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
